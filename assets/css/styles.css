@@ -1,0 +1,166 @@
+:root {
+    --primary: #FFD700
+}
+:root {
+    --secondary: #00CED1
+}
+:root {
+    --success: #00FF00
+}
+:root {
+    --danger: #FF0000
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    grid-template-areas: 
+    "header header header header"
+    "nav menu menu menu"
+    "footer footer footer footer";
+}
+body{
+    font-family: "Noto Sans", "sans-serif";
+}
+/* Grid cajas de contenido */
+header{
+    height: 100px;
+    grid-area: header;
+    background-color: var(--primary);
+}
+nav{
+    width: 15vw;
+    height: 1300px;
+    grid-area: nav;
+    background-color: var(--secondary);
+}
+menu{
+    width: 84.9vw;
+    height: 1300px;
+    grid-area: menu;
+    background-color: var(--primary) 50%;
+}
+footer{
+    height: 110px;
+    grid-area: footer;
+    background-color: var(--danger);
+}
+/* Título*/
+header h2{
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* Barra de navegación */
+ul{
+    margin: 35px;
+    list-style: none;
+}
+li{
+    margin: 5px;
+    font-size: 25px;
+    display: flex;
+    justify-content: flex-start;
+}
+li a{
+    color: rgb(70, 70, 70);
+    text-decoration: none;
+}
+li span{
+    color: rgb(71, 71, 71);
+    font-weight: lighter;
+}
+.list-tittle{
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+/* Productos */
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 35px;
+    gap: 35px;
+}
+.bg{
+    background-position: center;
+    background-size: cover;
+}
+.item1{
+    height: 63vh;
+    background-color: var(--primary);
+    border: 1px solid #e4e4e4;
+}
+.item2{
+    height: 63vh;
+    background-color: var(--primary);
+    border: 1px solid #e4e4e4;
+}
+.item3{
+    height: 63vh;
+    background-color: var(--primary);
+    border: 1px solid #e4e4e4;
+}
+.item4{
+    height: 63vh;
+    background-color: var(--primary);
+    border: 1px solid #e4e4e4;
+}
+.itemimg1{
+    height: 45vh;
+    background-image: url(../img/1a.jpeg);
+}
+.itemimg2{
+    height: 45vh;
+    background-image: url(../img/1b.jpeg);
+}
+.itemimg3{
+    height: 45vh;
+    background-image: url(../img/1c.jpeg);
+}
+.itemimg4{
+    height: 45vh;
+    background-image: url(../img/1d.jpeg);
+}
+.itemtittle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.itemtext{
+    display: block;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 13vh;
+}
+.itemtext h1{
+    padding-bottom: 2vh;
+}
+.itembutton{
+    display: flex;
+    justify-content: center;
+}
+.itembutton button{
+    background-color: var(--success);
+    height: 5vh;
+    display: inline-block;
+    color: black;
+    border: none;
+    text-decoration: none;
+    flex-basis: 500px;
+}   
+.itembutton button:hover{
+    background-color: rgb(55, 202, 121);
+}
+/* Pie de página */
+footer h4{
+    color: #ffe4c4;
+    height: 7.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
